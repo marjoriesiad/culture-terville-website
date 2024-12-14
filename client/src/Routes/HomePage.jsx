@@ -6,7 +6,6 @@ import CategoryNav from '../Components/CategoryNav'
 const HomePage = () => {
   return (
     <div className=''>
-        <CategoryNav />
     </div>
   )
 }
