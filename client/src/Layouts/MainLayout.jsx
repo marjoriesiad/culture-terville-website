@@ -5,7 +5,7 @@ import React from 'react'
 
 const MainLayout = () => {
   return (
-    <div className="bg-red-300 px-4">
+    <div className="bg-red-300 px-4 h-screen">
         <Navbar />
         <Outlet />
     </div>
