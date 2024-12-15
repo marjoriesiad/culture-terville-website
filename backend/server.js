@@ -2,11 +2,14 @@ import express from 'express';
 import cors from 'cors';
 import connectDb from './lib/connectDb.js';
 import traiteurRouter from './routes/traiteur.route.js';
+import viennoiserieRouter from './routes/viennoiserie.route.js';
 
 const app = express();
 app.use(cors(process.env.CLIENT_URL));
 app.use(express.json());
 app.use('/', traiteurRouter);
+app.use('/', viennoiserieRouter);
+
 
 
 app.listen(3000, () => {
