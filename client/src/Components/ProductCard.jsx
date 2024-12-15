@@ -6,7 +6,7 @@ const ProductCard = (props) => {
 
   return (
     <div className="relative h-32">
-      <img src={props.src} alt="" className="w-full h-full object-fill" />
+      <img src={props.src} alt="" className="w-full h-full object-cover" />
       <div className="opacity-0 hover:opacity-100 absolute inset-0 bg-white bg-opacity-70 p-2 flex flex-col justify-between text-center cursor-pointer transition duration-300 ease-in-out">
         <h3 className="text-xl font-semibold w-32 mx-auto">{props.name}</h3>
         <p className="text-main-red font-semibold">{formattedPrice}€</p>
